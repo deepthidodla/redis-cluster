@@ -1,5 +1,5 @@
 # redis-cluster
-...
+
 The set up is 1 master and 2 slaves. 
 To bring the cluster up, run:
 ```
@@ -18,11 +18,11 @@ should see OK
 >INFO
 ```
 Should see like below:
-
+Please verify connected_slaves = 2.
 ```
 # Replication
 role:master
-*connected_slaves:2*
+connected_slaves:2
 slave0:ip=10.11.8.3,port=6379,state=online,offset=407,lag=1
 master_repl_offset:407
 repl_backlog_active:1
